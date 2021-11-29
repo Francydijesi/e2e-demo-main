@@ -9,46 +9,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
     <script>
-      (function (n, i, v, r, s, c, u, x, z) {
-        x = window.AwsRumClient = {
-          q: [],
-          n: n,
-          i: i,
-          v: v,
-          r: r,
-          c: c,
-          u: u
-        };
-        window[n] = function (c, p) {
-          x.q.push({ c: c, p: p });
-        };
-        z = document.createElement('script');
-        z.async = true;
-        z.src = s;
-        document.head.insertBefore(
-                z,
-                document.getElementsByTagName('script')[0]
-        );
-      })(
-              'cwr',
-              '641df564-59c3-4806-ba24-88a954647091',
-              '1.0.0',
-              'us-west-2',
-              'https://client.rum.us-east-1.amazonaws.com/1.0.2/cwr.js',
-              {
-                sessionSampleRate: 1,
-                guestRoleArn: 'arn:aws:iam::750664202209:role/RUM-Monitor-us-west-2-750664202209-5795469856361-Unauth',
-                identityPoolId: 'us-west-2:c59c7f46-9f06-4697-b2c9-6448f9d9c2ce',
-                endpoint: 'https://dataplane.rum-gamma.us-west-2.amazonaws.com',
-                telemetries: [
-                  'errors',
-                  'http',
-                  'performance'
-                ],
-		enableXRay: true,
-		allowCookies: true
-              }
-      );
+      <script>(function(n,i,v,r,s,c,x,z){x=window.AwsRumClient={q:[],n:n,i:i,v:v,r:r,c:c};window[n]=function(c,p){x.q.push({c:c,p:p});};z=document.createElement('script');z.async=true;z.src=s;document.head.insertBefore(z,document.getElementsByTagName('script')[0]);})('cwr','e88173df-c8d5-4042-b542-d038a0b95ff2','1.0.0','eu-central-1','https://client.rum.us-east-1.amazonaws.com/1.0.2/cwr.js',{sessionSampleRate:1,guestRoleArn:"arn:aws:iam::506199253386:role/RUM-Monitor-eu-central-1-506199253386-3300321918361-Unauth",identityPoolId:"eu-central-1:c41914fc-2b13-459d-9862-d67583262079",endpoint:"https://dataplane.rum.eu-central-1.amazonaws.com",telemetries:["performance","errors","http"],allowCookies:true,enableXRay:false});</script>
     </script>
 <!--    <script>(function(n,i,a,v,r,s,c,x,z){x=window.AwsNexusTelemetry={q:[],n:n,i:i,a:a,v:v,r:r,c:c};window[n]=function(c,p){x.q.push({c:c,p:p});};z=document.createElement('script');z.async=true;z.src=s;document.head.insertBefore(z,document.getElementsByTagName('script')[0]);})('nexus','641df564-59c3-4806-ba24-88a954647091','rum-xray-servicelens-11-11','1.0.0','us-west-2','https://d1ktxyteejjrbw.cloudfront.net/assets/rum-javascript-telemetry.js',{sessionSampleRate:1,guestRoleArn:"arn:aws:iam::750664202209:role/RUM-Monitor-us-west-2-750664202209-5795469856361-Unauth",identityPoolId:"us-west-2:c59c7f46-9f06-4697-b2c9-6448f9d9c2ce",endpoint:"http://dataplane.localhost:8080"});nexus('configurePlugin', {pluginId: "com.amazonaws.rum.fetch", config: [{trace: true}]});nexus('configurePlugin', {pluginId: "com.amazonaws.rum.xhr", config: [{trace: true}]});</script>-->
 <!--    <script>(function(n,i,a,v,r,s,c,x,z){x=window.AwsNexusTelemetry={q:[],n:n,i:i,a:a,v:v,r:r,c:c};window[n]=function(c,p){x.q.push({c:c,p:p});};z=document.createElement('script');z.async=true;z.src=s;document.head.insertBefore(z,document.getElementsByTagName('script')[0]);})('nexus','641df564-59c3-4806-ba24-88a954647091','rum-xray-servicelens-11-11','1.0.0','us-west-2','https://d1ktxyteejjrbw.cloudfront.net/assets/rum-javascript-telemetry.js',{sessionSampleRate:1,guestRoleArn:"arn:aws:iam::750664202209:role/RUM-Monitor-us-west-2-750664202209-5795469856361-Unauth",identityPoolId:"us-west-2:c59c7f46-9f06-4697-b2c9-6448f9d9c2ce",endpoint:"http://dataplane.localhost:8080"});nexus('configurePlugin', {pluginId: "xray_fetch_plugin", config: {trace: true}});</script>-->
